@@ -52,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
            Toast.makeText(this, "1 has only 1 as a factor", Toast.LENGTH_SHORT).show();
        } else if (numberEntered == 2) {
            Toast.makeText(this, "2 has only 1 and 2 as a factor\nenter number greater than 2", Toast.LENGTH_LONG).show();
+       }else if(numberEntered >1000000){
+           Toast.makeText(this, "Invalid input", Toast.LENGTH_SHORT).show();
        }
         else {
            startActivity(i);
